@@ -1,0 +1,53 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Varela Round", Arial, Helvetica sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  transition: $transiton; //this is annoying
+  -webkit-transition: $transiton;
+  -moz-transition: $transiton;
+  -ms-transition: $transiton;
+  -o-transition: $transiton;
+  font-family: "Varela Round", Arial, Helvetica sans-serif;
+  font-weight: bold;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.anchor {
+  color: #495057;
+  &:hover {
+    color: #0b5ed7;
+    text-decoration: #0b5ed7 underline;
+  }
+}
+
+.content {
+  margin-top: 50px;
+  height: calc(100vh - 20em);
+  min-height: calc(100vh - 20em);
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+.creditContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bug {
+  vertical-align: middle; 
+}
